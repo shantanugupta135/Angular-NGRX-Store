@@ -1,0 +1,7 @@
+<h2>Cart Item</h2>
+<ul>
+  <li *ngFor="let item of cartItems$ | async">
+    {{ item.name }} - ${{ item.price }} (Quantity: {{ item.quantity }})
+    <button (click)="removeFromCart(item.productId)">Remove</button>
+  </li>
+  </ul>
