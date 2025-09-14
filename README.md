@@ -16,48 +16,16 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 <img width="1918" height="910" alt="image" src="https://github.com/user-attachments/assets/3336b187-edbe-4291-900b-b3412fc7aca6" />
 
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## NGRX Advantages
+NgRx is most useful when:
+1. You have shared state across many components (e.g., cart, auth, notifications).
+2. Your app is large-scale with complex flows.
+3. You want debuggable, predictable, testable state management.
+4. Single Source of Truth (Global State)
+5. Predictable State Changes
+6. Time-Travel Debugging : NgRx DevTools lets you rewind, replay, or inspect every action/state change.
+7. Scalability for Large Applications
+8. Improved Performance with Memoized Selectors : NgRx Selectors are memoized → components only re-render when relevant state changes. Prevents unnecessary Angular    change detection cycles.
 
 ## Additional Resources
 
